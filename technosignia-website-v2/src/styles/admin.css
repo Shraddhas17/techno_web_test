@@ -1,0 +1,122 @@
+/* Admin Panel Styles */
+.admin-panel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-header p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #D1344D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(209, 52, 77, 0.3);
+}
+
+/* Add Form */
+.add-form {
+  margin-bottom: 20px;
+}
+
+.add-form input,
+.add-form select {
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.add-form input::placeholder {
+  opacity: 0.6;
+}
+
+/* Students Table */
+.students-table-container {
+  overflow-x: auto;
+}
+
+.students-table {
+  width: 100%;
+}
+
+.students-table thead tr {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.students-table tbody tr {
+  transition: all 0.2s;
+}
+
+.students-table tbody tr:hover {
+  background: rgba(45, 90, 158, 0.05);
+}
+
+.students-table th,
+.students-table td {
+  padding: 14px;
+  text-align: left;
+}
+
+.students-table th {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.students-table tbody td {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .logout-btn {
+    align-self: flex-end;
+  }
+
+  .students-table {
+    font-size: 12px;
+  }
+
+  .students-table th,
+  .students-table td {
+    padding: 8px;
+  }
+}
