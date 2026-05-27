@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { FaJava, FaPython, FaDatabase, FaCloud, FaBug } from "react-icons/fa6";
+// import { FaJava} from "react-icons/fa6";
 import java from "../assets/java.png";
 import python from "../assets/python.png";
 import server from "../assets/server.png";
